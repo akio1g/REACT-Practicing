@@ -1,7 +1,12 @@
 const FirstComponent = () => {
+    const name = "Gabriel";
+
     return (
         <div>
-            <h1>Gabriel's first component</h1>
+            <h1>First component of {name}</h1>
+            <div>
+
+            </div>
         </div>
     );
 };
