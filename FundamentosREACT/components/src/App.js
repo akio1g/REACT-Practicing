@@ -1,10 +1,10 @@
 // components
-import githubLogo from './assets/github.png';
 import ManageData from './components/ManageData';
 
 // styles
 import './App.css';
 import ListRender from './components/ListRender';
+import ConditionalRender from './components/ConditionalRender';
 
 
 
@@ -17,6 +17,7 @@ function App() {
         <ManageData />
       </div>
       <ListRender />
+      <ConditionalRender />
     </div>
   );
 }

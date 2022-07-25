@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const ManageData = () => {
-    let valor = 10;
 
     const [number, setNumber] = useState();
 
