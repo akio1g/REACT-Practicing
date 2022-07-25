@@ -1,15 +1,22 @@
 // components
-import Challenge from './components/Challenge';
+import githubLogo from './assets/github.png';
+import ManageData from './components/ManageData';
 
 // styles
 import './App.css';
+import ListRender from './components/ListRender';
+
+
 
 
 function App() {
   return (
     <div className="App">
-      <h1>Testing Simple Functions</h1>
-      <Challenge />
+      
+      <div className="ManageData">
+        <ManageData />
+      </div>
+      <ListRender />
     </div>
   );
 }
