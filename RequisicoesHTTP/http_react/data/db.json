@@ -1,0 +1,17 @@
+{"logins":[
+    {
+        "id": 1,
+        "username": "admin",
+        "senha": "senha123"
+    },
+    {
+        "id": 2,
+        "username": "akio",
+        "senha": "123"
+    },
+    {
+        "id": 3,
+        "username": "usuarioTeste",
+        "senha": "teste123"
+    }
+]}
