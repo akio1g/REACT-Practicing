@@ -13,9 +13,6 @@ npm i json-server
 -- requisitos: criar pasta data com arquivo db.json
 -> package.json -> scripts -> "server": "json-server --watch data/db.json"
 npm run server 
-npm start é possivel no mesmo projeto
-
-
 ## COMANDOS ES7+ React/Redux/React-Native snippets
 
 # criar estrutura do component
