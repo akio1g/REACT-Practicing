@@ -1,17 +1,29 @@
-{"logins":[
+{
+  "logins": [
     {
-        "id": 1,
-        "username": "admin",
-        "senha": "senha123"
+      "id": 1,
+      "username": "admin",
+      "senha": "senha123"
     },
     {
-        "id": 2,
-        "username": "akio",
-        "senha": "123"
+      "id": 2,
+      "username": "akio",
+      "senha": "123"
     },
     {
-        "id": 3,
-        "username": "usuarioTeste",
-        "senha": "teste123"
+      "id": 3,
+      "username": "usuarioTeste",
+      "senha": "teste123"
+    },
+    {
+      "username": "teste",
+      "senha": "123",
+      "id": 4
+    },
+    {
+      "username": "maquinario",
+      "senha": "1234",
+      "id": 5
     }
-]}
+  ]
+}
