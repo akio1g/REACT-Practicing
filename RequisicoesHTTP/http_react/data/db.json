@@ -24,6 +24,16 @@
       "username": "maquinario",
       "senha": "1234",
       "id": 5
+    },
+    {
+      "username": "gabriel",
+      "senha": "gabriel123",
+      "id": 6
+    },
+    {
+      "username": "umebayashi",
+      "senha": "Umebayahsi",
+      "id": 7
     }
   ]
 }

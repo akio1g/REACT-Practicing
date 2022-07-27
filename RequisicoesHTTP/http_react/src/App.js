@@ -25,6 +25,8 @@ function App() {
 
   // adicionar logins nessa api
   const handleSubmit = async (e) => {
+    e.preventDefault();
+
     const login = {
       username,
       senha,
@@ -35,6 +37,15 @@ function App() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(login),
     });
+
+    // carregamento dinamico
+    const addedLogin = await res.json();
+
+    setLogins((prevLogins) => [...prevLogins, addedLogin]);
+
+    // zerar os inputs
+    setUsername("");
+    setSenha("");
   };
 
   return (
