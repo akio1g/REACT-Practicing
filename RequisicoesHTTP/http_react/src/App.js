@@ -1,6 +1,8 @@
 import "./App.css";
 
 import { useState, useEffect } from "react";
+// CUSTOM HOOK
+import { useFetch } from "./hooks/useFetch";
 
 const url = "http://localhost:3000/logins";
 
@@ -10,7 +12,11 @@ function App() {
   const [username, setUsername] = useState("");
   const [senha, setSenha] = useState("");
 
+  // dados  resgatados em uma variavel
+  const { data: items } = useFetch(url);
+
   // resgatar dados
+  /*
   useEffect(() => {
     async function fetchData() {
       const res = await fetch(url);
@@ -22,7 +28,7 @@ function App() {
 
     fetchData();
   }, []);
-
+*/
   // adicionar logins nessa api
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -52,11 +58,12 @@ function App() {
     <div className="App">
       <h1>LISTA DE LOGINS</h1>
       <ul className="lista-login">
-        {logins.map((login) => (
-          <li key={login.id}>
-            {login.username} - {login.senha}
-          </li>
-        ))}
+        {items &&
+          items.map((login) => (
+            <li key={login.id}>
+              {login.username} - {login.senha}
+            </li>
+          ))}
       </ul>
       <div className="add-login">
         <h1>CADASTRAR LOGIN</h1>
